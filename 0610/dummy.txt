@@ -1,0 +1,5 @@
+owner rwx --> 7
+group w --> 2
+others r --> 4
+
+chmod 724 dummy.txt
