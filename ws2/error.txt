@@ -1,0 +1,1000 @@
+   31  git add README.md
+   32  git status
+   33  git commit -m "update README"
+   34  git status
+   35  git push
+   36  git status
+   37  pwd
+   38  ls - la
+   39  ls -la
+   40  ls/
+   41  ls /-l
+   42  ls / -l
+   43  ls -arhl
+   44  ls -harl
+   45  ls
+   46  cd cs-131
+   47  ls
+   48  mkdir 0608
+   49  la
+   50  ls
+   51  touch aa.txt
+   52  ls
+   53  cd 0608
+   54  touch aa.txt
+   55  ls
+   56  touch a.txt
+   57  touch bb.txt
+   58  touch b.txt
+   59  ls
+   60  cd..
+   61  cd.
+   62  cd ..
+   63  rm aa.txt
+   64  ls
+   65  cd 0608
+   66  cp a*.txt copied/
+   67  cp a*.txt
+   68  ls
+   69  cp a*.txt copiedls copied\
+   70  rm x*.txt
+   71  rm a*.txt
+   72  ls
+   73  mkdir copied
+   74  touch aa.txt
+   75  touch a.txt
+   76  ls
+   77  cp a*.txt copiedcopied
+   78  cp a*.txt copied
+   79  ls
+   80  ls copied
+   81  cd copied
+   82  ls
+   83  cd ..
+   84  ls copied
+   85  cp [ab][ab[.txt copied
+   86  cp [ab][ab].txt copied
+   87  ls copied
+   88  rm a.txt
+   89  ls copied
+   90  touch a.txt
+   91  cd copied
+   92  rm a.txt
+   93  ls
+   94  cd ..
+   95  clear
+   96  ls
+   97  vim aa.txt
+   98  ls
+   99  cat aa.txt
+  100  less aa.txt
+  101  head -4 aa.txt
+  102  cat b.txt
+  103  banana
+  104  vim b.txt
+  105  cat b.txt
+  106  sort b.txt
+  107  wc b.txt
+  108  grep "ba" b.txt
+  109  tail -2 b.txt
+  110  cat b.txt
+  111  sort b.txt > sortedb.txt
+  112  cat sortedb.txt 
+  113  ls
+  114  ls > lsresults.txt
+  115  cat lsresults.txt 
+  116  sort b.txt >> sortedb.txt
+  117  cat sortedb.txt
+  118  rm copied
+  119  rm copied 2> log.txt
+  120  cat log.txt
+  121  ls
+  122  cat < sortedb.txt
+  123  cat b.txt
+  124  man uniq
+  125  uniq b.txt
+  126  sort b.txt
+  127  sort b.txt | uniq
+  128  man uniq
+  129  vim b.txt
+  130  cat b.txt
+  131  sort b.txt | uniq
+  132  cat b.txt
+  133  sort b.txt | uniq -c
+  134  sort b.txt | uniq |  wc
+  135  history | grep "uniq"
+  136  cd ..
+  137  ls
+  138  git status
+  139  git add 0608/
+  140  git status
+  141  git commit -m "add in-class samples on June 8"
+  142  git push
+  143  history
+  144  clear
+  145  git log
+  146  git status
+  147  vim README
+  148  rm README
+  149  vim README.md
+  150  cat README.md 
+  151  git add README.md 
+  152  git commit -m "edit README"
+  153  git log
+  154  git checkout 5f55f5a
+  155  git log
+  156  cat README.md 
+  157  git checkout main
+  158  cat README.md
+  159  git log 
+  160  git checkout -b dev
+  161  git status
+  162  vim dev-README.md
+  163  cat dev-README.md 
+  164  ls
+  165  git add dev-README.md 
+  166  git commit -m "add dev-README.md"
+  167  git log --graph
+  168  clear
+  169  git checkout main
+  170  ls
+  171  git status
+  172  git merge dev
+  173  git status
+  174  ls
+  175  cat dev-README.md 
+  176  git status
+  177  git log 
+  178  clear
+  179  git checkout dev
+  180  vim README.md
+  181  git add README.md
+  182  git commit -m "edit README (dev branch)."
+  183  git log 
+  184  clear
+  185  git checkout main
+  186  git status
+  187  vim README.md
+  188  git add README.md
+  189  git commit "-m "edit README on main"
+  190  q
+  191  q
+  192  clear
+  193  qq
+  194  clear
+  195  git 
+  196  git checkout main
+  197  git status
+  198  cd cs131
+  199  cd cs-131
+  200  git checkout main
+  201  git add README.md
+  202  git status
+  203  git commit -m "edit README on main"
+  204  git log 
+  205  git merge dev
+  206  git add README.md
+  207  git commit -m "fix a merge conflict" 
+  208  git log --graph --all
+  209  clear
+  210  cd~
+  211  cd ~
+  212  mkdir -p cs131/ws1/{logs,data,backup}
+  213  cd cs131/ws1
+  214  touch answers.txt
+  215  # data files
+  216  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  217  echo "notes" > data/readme.txt
+  218  echo "hidden config" > .env
+  219  # log files of differing sizes
+  220  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  221  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  222  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001
+  223  cd ~/cs131/ws1 && pwd 
+  224  rm cs131
+  225  rm -r cs131
+  226  cd ..
+  227  rm cs131
+  228  rm -r cs131
+  229  cd ..
+  230  rm cs131
+  231  rm -r cs131
+  232  cd cs-131
+  233  cd ~
+  234  mkdir -p cs-131/ws1/{logs,data,backup}
+  235  cd cs131/ws1
+  236  touch answers.txt 
+  237  cd ~
+  238  mkdir -p cs-131/ws1/{logs,data,backup}
+  239  cd cs-131/ws1
+  240  touch answers.txt 
+  241  # data files
+  242  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  243  echo "notes" > data/readme.txt
+  244  echo "hidden config" > .env
+  245  # log files of differing sizes
+  246  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  247  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  248  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001
+  249  cd ~/cs-131/ws1 && pwd
+  250  echo "T1: cd ~/cs131/ws1 && pwd" >> answers.txt
+  251  cat answers.txt
+  252  ls ../data 
+  253  cd logs/
+  254  cd ..
+  255  ls ..data/
+  256  ls ../data 
+  257  ls
+  258  cd logs/
+  259  ls
+  260  ls ../data
+  261  echo "T2: cd logs/ " >> answers.txt
+  262  vim answers.txt
+  263  cat answers.txt
+  264  cd ..
+  265  git add ws1
+  266  git add /ws1
+  267  cat answers.txt
+  268  git init
+  269  git add answers.txt
+  270  git commit -m "worksheet 1"
+  271  cd cs-131
+  272  git log
+  273  cd ~
+  274  mkdir -p cs-131/ws1/{logs,data,backup}
+  275  cd cs-131/ws1
+  276  touch answers.txt 
+  277  git status
+  278  git add ws1
+  279  git add ws1/
+  280  git add /ws1
+  281  cat ws1
+  282  cd ..
+  283  cd ws1
+  284  cd ..
+  285  cd ws1
+  286  clear
+  287  # data files
+  288  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  289  echo "notes" > data/readme.txt
+  290  echo "hidden config" > .env
+  291  # log files of differing sizes
+  292  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  293  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  294  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001 
+  295  cat ws1
+  296  ls
+  297  cd cs-131/ws1 && pwd
+  298  cd ~/cs-131/ws1 && pwd
+  299  cat answers.txt
+  300  cat -a answers.txt
+  301  ls -a answers.txt
+  302  ls
+  303  ls logs
+  304  rm ws1
+  305  cd
+  306  cd cs-131
+  307  rm ws1
+  308  rm -r ws1
+  309  clear
+  310  cat answers.txt
+  311  cd ws1
+  312  cat answers.txt
+  313  ls
+  314  ls -a
+  315  cd ~
+  316  mkdir -p cs131/ws1/{logs,data,backup}
+  317  cd cs131/ws1
+  318  touch answers.txt 
+  319  cat
+  320  cd cs-131
+  321  ls
+  322  cd ws1
+  323  ls
+  324  touch answers.txt
+  325  ls
+  326  {logs,data,backup} 
+  327  # data files
+  328  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  329  echo "notes" > data/readme.txt
+  330  echo "hidden config" > .env
+  331  # log files of differing sizes
+  332  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  333  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  334  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001 
+  335  ls
+  336  cd cs-131
+  337  git log
+  338  history
+  339  history | grep "commit"
+  340  history | grep "stage"
+  341  history | grep "add"
+  342  history | grep "0608"
+  343  git add ws1/
+  344  git log
+  345  git status
+  346  git restore --staged ws1/.env 
+  347  git restore --staged ws1/answers.txt  
+  348  git status
+  349  quit
+  350  cd cs-131
+  351  ls
+  352  ls -l
+  353  cd ws1/
+  354  ls
+  355  rm answers.txt 
+  356  ls
+  357  cd ..
+  358  rm ws1/
+  359  rmdir ws1
+  360  cd ws1/
+  361  ls -a
+  362  rm -a
+  363  rm -i *.*
+  364  rm -i .*
+  365  cd .git/
+  366  rm -a
+  367  ls
+  368  cd ..
+  369  rm -r ws1/
+  370  y
+  371  ls
+  372  cd ..
+  373  clear
+  374  ls -l
+  375  cd cs131
+  376  ls -l
+  377  cd ..
+  378  rm -r cs131
+  379  ls -l
+  380  rm answers.txt 
+  381  ls -l
+  382  mv cs-131 cs131
+  383  ls -l
+  384  git status
+  385  pwd
+  386  cls
+  387  clear
+  388  ls -l
+  389  ls
+  390  cd cs131/
+  391  ls -l
+  392  cd ~
+  393  mkdir -p cs131/ws1/{logs,data,backup}
+  394  cd cs131/ws1
+  395  touch answers.txt 
+  396  ls
+  397  cd ~
+  398  cd cs131/ws1/
+  399  # data files
+  400  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  401  echo "notes" > data/readme.txt
+  402  echo "hidden config" > .env
+  403  # log files of differing sizes
+  404  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  405  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  406  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001 
+  407  ls -l
+  408  ls
+  409  cd data/
+  410  la
+  411  cat Data1.csv 
+  412  cat Da*
+  413  head -c 2048   /dev/zero | tr '\0' 'a'
+  414  ls
+  415  history | grep "head"
+  416  cd ..
+  417  cd logs/
+  418  ls
+  419  cat 
+  420  cat app0
+  421  cdt app0*
+  422  cat app0*
+  423  pwd
+  424  cd ..
+  425  pwd
+  426  # data files
+  427  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  428  echo "notes" > data/readme.txt
+  429  echo "hidden config" > .env
+  430  # log files of differing sizes
+  431  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  432  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  433  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001
+  434  ls -l
+  435  for i in 1 2 3; do echo "row,value" > data/Data$i.csv; done
+  436  echo "notes" > data/readme.txt
+  437  echo "notes" 
+  438  echo "notes"
+  439  echo "hidden config" > .env
+  440  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  441  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  442  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001
+  443  ls
+  444  ls -l
+  445  cd ~/cs131/ws1
+  446  cd logs/
+  447  ls 
+  448  cd ~/cs131/ws1
+  449  cd \
+  450  cd //
+  451  cd /
+  452  pwd
+  453  ls -l
+  454  cd ~/cs131/ws1
+  455  pwd
+  456  cd \
+  457  cd /
+  458  pwd
+  459  cd ~/cs131/ws1
+  460  pwd
+  461  cd cd ~/cs131/ws1; pwd
+  462  cd ~/cs131/ws1; pwd
+  463  cd ~/cs131/ws1; pwd; touch simid
+  464  ls -l
+  465  rm simid 
+  466  ls -l
+  467  echo "T1: cd ~/cs131/ws1 ; pwd " > answers.txt
+  468  cat answers.txt 
+  469  echo "T1: cd ~/cs131/ws1 ; pwd " > answers.txt
+  470  cat answers.txt 
+  471  echo "T1: cd ~/cs131/ws1 ; pwd " >> answers.txt
+  472  cat answers.txt 
+  473  vi answers.txt 
+  474  cat answers.txt 
+  475  vi answers.txt 
+  476  cat answers.txt 
+  477  cd ~/cs131/ws1 ; pwd
+  478  cd ~
+  479  ls -al
+  480  vi .profile
+  481  cat .bashrc
+  482  ls -a
+  483  cat .profile 
+  484  cat .bashrc
+  485  grep pwd *
+  486  grep "pwd" *
+  487  grep 'pwd' *
+  488  grep "\pwd" *
+  489  cat .* |grep "pwd"
+  490  pwd
+  491  cd cd ~
+  492  cd ~
+  493  pwd
+  494  cd /
+  495  ls -l
+  496  cd 
+  497  vi .bash
+  498  ls -a
+  499  cat .bashrc
+  500  vi .bashrc
+  501  cd cd cs131/
+  502  cd cs131/
+  503  cd .
+  504  pwd
+  505  ls -l
+  506  cd ws1/
+  507  cd data/
+  508  ls
+  509  ls -l ../logs/
+  510  ls -l
+  511  pwd
+  512  ls /home/ishigaki-cs20/cs131/ws1/logs/
+  513  ls ../logs/
+  514  ls ../logs
+  515  echo ~
+  516  cd cs131
+  517  ls
+  518  cd ws1
+  519  ls
+  520  cat answers.txt 
+  521  cd logs
+  522  ls ../data/
+  523  cd ..
+  524  echo "T2: ls../data/" >> answers.txt 
+  525  cat answers.txt 
+  526  file logs/app01.log .env 
+  527  ls -ahr
+  528  ls -alhr
+  529  ls - lahr
+  530  ls -lahr
+  531  echo "T4: ls -lahr" >> answers.txt
+  532  man order
+  533  cd cs131
+  534  cd ws1
+  535  file logs/app01.log .env
+  536  vi answers.txt 
+  537  cat answers.txt 
+  538  ls -lhS
+  539  ls -lS
+  540  cd logs
+  541  ls -lS
+  542  ls -l
+  543  cd ..
+  544  ls -lS logs/
+  545  echo "T5: ls -lS logs/" >> answers.txt simi.txt
+  546  cat simi.txt
+  547  cat answers.txt 
+  548  vim answers.txt 
+  549  cat answers.txt 
+  550  cat answers.txt > simi.txt
+  551  cat simi.txt 
+  552  ls -l logs/app02.log 
+  553  echo "T6: size = 1048576, owner = ishigaki-cs20, last modification: Jun  9 15:14" >> answers.txt 
+  554  echo "T6: size = 1048576, owner = ishigaki-cs20, last modification: Jun  9 15:14" >> simi.txt
+  555  cd data
+  556  ls -l data?.csv
+  557  ls -ldata?.csv
+  558  ls -l "data?.csv"
+  559  ls -l
+  560  ls -l | grep "data?.csv"
+  561  ls -l Data?.csv
+  562  ..
+  563  cd ..
+  564  echo "T7: ls -l Data?.csv" >> answers.txt 
+  565  cd data
+  566  ls -l [A-Z]*
+  567  echo "T8: ls -l [A-Z]*" >> answers.txt 
+  568  ls
+  569  touch BACKUP001
+  570  touch BACKUPp002
+  571  touch BACKUP987
+  572  ls -l BACKUP[0-9][0-9][0-9]
+  573  touch BACKUP75A
+  574  ls
+  575  ls -l BACKUP[0-9][0-9][0-9]
+  576  clear
+  577  ls
+  578  ls -l
+  579  rm BACKUP*
+  580  ls 
+  581  cd ..
+  582  cd logs
+  583  cd ..
+  584  cd data
+  585  cat answers.txt
+  586  rm answers.txt 
+  587  cd ..
+  588  vi answers.txt 
+  589  cat answers.txt 
+  590  cd logs
+  591  ls -l 
+  592  ls BACKUP[0-9][0-9][0-9]
+  593  ls BACKUP.[0-9][0-9][0-9]
+  594   ls BACKUP.[0-9][0-9][0-9]" >> ../answers.txt 
+  595  cat ../answers.txt 
+  596  cd ..
+  597  ls
+  598  ls -l backup
+  599  cp -r data/ backup/
+  600  ls 
+  601  cd backup
+  602  rm -r data
+  603  ls
+  604  cd..
+  605  cd ..
+  606  cp -r data/ backup/ ; ls -l backup/
+  607  echo "T10: cp -r data/ backup/ ; ls -l backup/" >> answers.txt 
+  608  mv data/readme.txt data/README.md 
+  609  ls -l
+  610  ls -l data
+  611  mv data/README.txt data/readme.txt
+  612  mv data/README.md data/readme.txt
+  613  ls -l data
+  614  mv data/readme.txt data/README.md ; ls -l data/README.md
+  615  echo "T11: mv data/readme.txt data/README.md ; ls -l data/README.md" >> answers.txt 
+  616  cat answers.txt 
+  617  cp answers.txt simi.txt 
+  618  rm -ri backup/data
+  619  ls -l backup
+  620  echo "T12: rm -ri backup/data" >> answers.txt 
+  621  cp answers.txt simi.txt 
+  622  cat answers.txt
+  623  vim answers.txt 
+  624  cat answers.txt 
+  625  clear
+  626  echo *
+  627  echo $((1+2))
+  628  ls -l 
+  629  cd cs131
+  630  mkdir 0610
+  631  cd 0610
+  632  vim sample txt
+  633  rm txt
+  634  ls
+  635  ls -a
+  636  grep -E "[hc]at" sample
+  637  vim txt
+  638  rm txt
+  639  clear
+  640  cd ..
+  641  ls
+  642  cd ws1
+  643  ls
+  644  git add answers.txt
+  645  git status
+  646  git commit -m "linux basics challenge"
+  647  git push
+  648  ls
+  649  ls -a
+  650  cd ..
+  651  ls
+  652  ls -a
+  653  git status
+  654  git fetch
+  655  ls
+  656  git status
+  657  git merge FETCH_HEAD
+  658  git status
+  659  git push 
+  660  clear
+  661  echo "starting part B"
+  662  cd data
+  663  cd ..
+  664  cd data
+  665  ls
+  666  cd /data/yelp
+  667  ls
+  668  cat
+  669  grep "city":"Santa Barbara" yelp_academic_dataset_business.json 
+  670  grep ["city":"Santa Barbara"] yelp_academic_dataset_business.json
+  671  grep "Santa Barbara" yelp_academic_dataset_business.json
+  672  grep ""city":"Santa Barbara""
+  673  grep ""city":"Santa Barbara"" yelp_academic_dataset_business.json
+  674  grep "city":"Santa Barbara" yelp_academic_dataset_business.json 
+  675  grep '"city":"Santa Barbara"' yelp_academic_dataset_business.json 
+  676  cd cs131
+  677  cd ~
+  678  cd 131
+  679  cd cs131
+  680  cd ws1
+  681  touch answers2.txt
+  682  ls
+  683  grep '"city":"Santa Barbara"' yelp_academic_dataset_business.json 
+  684  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json 
+  685  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json >> results.txt
+  686  vim answers2.txt
+  687  cat answers2.txt
+  688  vim answers2.txt 
+  689  cat answers2.txt
+  690  grep '"state":"CA"' | wc -l
+  691  grep '"state":"CA"' | wc -l  /data/yelp/yelp_academic_dataset_business.json 
+  692  file /etc/shadow
+  693  id
+  694  ls
+  695  cd 0610
+  696  cd ..
+  697  ls
+  698  cd 0610
+  699  ls -a
+  700  ls -al
+  701  rm sample
+  702  vim sample.txt
+  703  ls -l /data/yelp
+  704  ls -l /etc/shadow
+  705  touch dummy.txt
+  706  clear
+  707  ls
+  708  ls -l
+  709  chmod 600 dummy.txt
+  710  ls -l
+  711  vim dummy.txt 
+  712  chmod 724 dummy.txt 
+  713  ls -l
+  714  chmod g=rw dummy.txt 
+  715  ls -l
+  716  cd ..
+  717  ls -al
+  718  clear
+  719  ps
+  720  aux
+  721  ps aux
+  722  ps a
+  723  top
+  724  cd 0610
+  725  ls
+  726  vim long.sh
+  727  sh long.sh
+  728  sh long.sh > result.txt &[1]+ Running
+  729  rm result.txt
+  730  ls
+  731  sh long.sh > result.txt &
+  732  jobs
+  733  logout
+  734  cd cs131
+  735  cd 0610
+  736  jobs
+  737  ps
+  738  man disown
+  739  man disown --help
+  740  disown --help 
+  741  ps
+  742  logout
+  743  su 
+  744  ps -ef
+  745  ps
+  746  cd cs131
+  747  ls
+  748  cd ws1/
+  749  ls
+  750  cd answers2.txt
+  751  cat answers2.txt 
+  752  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json
+  753  grep '"state":"CA"' /data/yelp/yelp_academic_dataset_business.json | wc -l
+  754  echo "B2:  grep '"state":"CA"' /data/yelp/yelp_academic_dataset_business.json | wc -l" >> answers2.txt
+  755  cat answers2.txt
+  756  grep 'state:CA' /data/yelp/yelp_academic_dataset_business.json | wc -l
+  757  echo "B2:  grep '"state":"CA"' /data/yelp/yelp_academic_dataset_business.json | wc -l"
+  758  echo "B2:  grep '\"state":\"CA"' /data/yelp/yelp_academic_dataset_business.json | wc -l"
+  759  echo "B2:  grep '\"state":"CA\"' /data/yelp/yelp_academic_dataset_business.json | wc -l"
+  760  echo "B2:  grep '\"state\":\"CA\"' /data/yelp/yelp_academic_dataset_business.json | wc -l"
+  761  vim answers2.txt
+  762  cat answers2.txt
+  763  grep -i "worth" /data/yelp/yelp_academic_dataset_business.json
+  764  grep -i "worth " /data/yelp/yelp_academic_dataset_business.json
+  765  grep -i " worth " /data/yelp/yelp_academic_dataset_business.json
+  766  grep -i "worth" /data/yelp/yelp_academic_dataset_review.json
+  767  grep -i "worth" /data/yelp/yelp_academic_dataset_review.json | wc -l
+  768  echo "B3: grep -i "worth" /data/yelp/yelp_academic_dataset_review.json" >> answers2.txt
+  769  cat answers2.txt 
+  770  vim answers2.txt
+  771  cat answers2.txt 
+  772  grep -E "C[oa]f[eé]e?" /data/yelp/yelp_academic_dataset_business.json
+  773  grep -E "C[oa]f[eé]e?" /data/yelp/yelp_academic_dataset_business.json|grep "Cofee"
+  774  grep -E "C[oa]ff?[eé]e?" /data/yelp/yelp_academic_dataset_business.json|grep "Cofee"
+  775  grep -E "C[oa]ff?[eé]e?" /data/yelp/yelp_academic_dataset_business.json|grep "Coffee"
+  776  grep -E "Cofee[A" /data/yelp/yelp_academic_dataset_business.json
+  777  grep -E "C[oa]ff?[eé]e?" /data/yelp/yelp_academic_dataset_business.json
+  778  grep -E "Coffee|Caf/data/yelp/yelp_academic_dataset_business.json
+  779  grep -E "Coffee|Café|Cafe" /data/yelp/yelp_academic_dataset_business.json
+  780  grep -E "Coffee|Café|Cafe" /data/yelp/yelp_academic_dataset_business.json | wc -l
+  781  grep "Caffe" /data/yelp/yelp_academic_dataset_business.json | wc -l
+  782  grep -E "Coffee|Café|Cafe" /data/yelp/yelp_academic_dataset_business.json | wc -l
+  783  echo "B4: grep -E '"Coffee|Café|Cafe" /data/yelp/yelp_academic_dataset_business.json"
+  784  echo "B4: grep -E '"Coffee|Café|Cafe" /data/yelp/yelp_academic_dataset_business.json >> answers2.txt
+  785  echo "B4: grep -E '"Coffee|Café|Cafe"' /data/yelp/yelp_academic_dataset_business.json" >> answers2.txt
+  786  echo "B4: grep -E \"Coffee|Café|Cafe\" /data/yelp/yelp_academic_dataset_business.json" >> answers2.txt
+  787  cat answers2.txt 
+  788  grep -E '"stars":(4\.5|5\.0)' /data/yelp/yelp_academic_dataset_business.json
+  789  echo "B5: grep -E '"stars":(4\.5|5\.0)' /data/yelp/yelp_academic_dataset_business.json /data/yelp/yelp_academic_dataset_business.json" >> answers2.txt
+  790  vim answers2.txt
+  791  logout
+  792  cat answers2.txt 
+  793  cd 131
+  794  cd cs131
+  795  cd ws1
+  796  cat answers2.txt 
+  797  grep -E '"stars":(4\.5|5\.0)' /data/yelp/yelp_academic_dataset_business.json
+  798  grep -E '"stars":(5\.0)' /data/yelp/yelp_academic_dataset_business.json
+  799  grep -E '"stars":(4\.5|5\,)' /data/yelp/yelp_academic_dataset_business.json
+  800  grep -E '"stars":(5\,)' /data/yelp/yelp_academic_dataset_business.json
+  801  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_business.json
+  802  grep -E '"stars":5,0' /data/yelp/yelp_academic_dataset_business.json
+  803  grep -E '"stars":5.0' /data/yelp/yelp_academic_dataset_business.json
+  804  grep -E '"stars":5.' /data/yelp/yelp_academic_dataset_business.json
+  805  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_business.json
+  806  grep -E '"stars":5.' /data/yelp/yelp_academic_dataset_business.json
+  807  grep -E '"stars":5,0' /data/yelp/yelp_academic_dataset_review.json
+  808  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_review.json
+  809  grep -E '"stars":5.' /data/yelp/yelp_academic_dataset_review.json
+  810  grep -E '\w+@[\w.]+\.[a-zA-Z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  811  grep -E '\w+@[\w.]+\.[a-zA-Z][a-zA-Z]' /data/yelp/yelp_academic_dataset_review.json
+  812  grep -E '\w+@[\w.]+\.[a-zA-Z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  813  grep -E '*@*\.[a-zA-Z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  814  grep -E '*\@*\.[a-zA-Z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  815  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_review.json
+  816  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_review.json | wc -l
+  817  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_review.json 
+  818  grep -E '"stars":5.' /data/yelp/yelp_academic_dataset_review.json 
+  819  echo "B6: grep -E '"stars":5.' /data/yelp/yelp_academic_dataset_review.json" >> answers2.txt
+  820  cat answers2.txt 
+  821  vim answers2.txt 
+  822  grep -E '"stars":5,' /data/yelp/yelp_academic_dataset_review.json
+  823  grep -E '[[:alnum:]_]+@[[:alnum:]_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  824  grep -E '\w+@[\w.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  825  grep -E '[A-Za-z0-9_]+@[A-Za-z0-9_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  826  cd cs131
+  827  ls
+  828  cd ws1
+  829  ls
+  830  cat answers2.txt 
+  831  grep -E '\w+@[\w.]+\.[a-zA-Z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  832  grep -Ec '[[:alnum:]_]+@[[:alnum:]_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  833  grep -E '[[:alnum:]_]+@[[:alnum:]_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  834  grep -Ec '[A-Za-z0-9_]+@[A-Za-z0-9_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  835  grep -Ec '[[:alnum:]_]+@[[:alnum:]_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+  836  echo "B7: grep -E '[A-Za-z0-9_]+@[A-Za-z0-9_.]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json" >> answers2.txt 
+  837  cat answers2.txt 
+  838  grep -E '[0-9]+\-{3,}' /data/yelp/yelp_academic_dataset_review.json 
+  839  grep -E '([0-9]+\-){3,}' /data/yelp/yelp_academic_dataset_review.json 
+  840  grep -E '([0-9]{3,3}\-[0-9]{3,3}\-[0-9]{3,4}' /data/yelp/yelp_academic_dataset_review.json 
+  841  grep -E '[0-9]{3,3}\-[0-9]{3,3}\-[0-9]{3,4}' /data/yelp/yelp_academic_dataset_review.json 
+  842  grep -E '[0-9]{3}\-[0-9]{3}\-[0-9]{4}' /data/yelp/yelp_academic_dataset_review.json
+  843  echo "B8: grep -E '[0-9]{3}\-[0-9]{3}\-[0-9]{4}' /data/yelp/yelp_academic_dataset_review.json" >> answers2.txt 
+  844  cat answers2.txt 
+  845  grep "name":"P*" /data/yelp/yelp_academic_dataset_business.json 
+  846  grep -E '"name":"P*"' /data/yelp/yelp_academic_dataset_business.json 
+  847  grep -E "\"name\":\"P*" /data/yelp/yelp_academic_dataset_business.json 
+  848  grep "\"name\":\"P*" /data/yelp/yelp_academic_dataset_business.json 
+  849  grep -E "\"name\":\"P." /data/yelp/yelp_academic_dataset_business.json 
+  850  grep -E "\"name\":\"P" /data/yelp/yelp_academic_dataset_business.json 
+  851  grep -E "\"name\":\"P[:alnum:]{1,}\"" /data/yelp/yelp_academic_dataset_business.json 
+  852  grep -E "\"name\":\"P[[:alnum:]]{1,}\"" /data/yelp/yelp_academic_dataset_business.json 
+  853  echo "B9: grep -E "\"name\":\"P[[:alnum:]]{1,}\"" /data/yelp/yelp_academic_dataset_business.json" >> answers2.txt 
+  854  cat answers2.txt 
+  855  grep -E '"name":"P[[:alnum:]]{1,}\"' /data/yelp/yelp_academic_dataset_business.json 
+  856  grep -E '"name":"P[[:alnum:]]{1,}"' /data/yelp/yelp_academic_dataset_business.json 
+  857  vim answers2.txt 
+  858  cd cs131
+  859  cd ws1
+  860  grep -Ec "[pizzaPizza]"
+  861  grep -Ec "[pizzaPizza]" /data/yelp/yelp_academic_dataset_review.json 
+  862  grep -iEc "pizza" data/yelp/yelp_academic_dataset_review.json
+  863  grep -iEc "pizza" /data/yelp/yelp_academic_dataset_review.json
+  864  echo "B10: grep -iEc "pizza" /data/yel
+  865  p/yelp_academic_dataset_review.json" >> answers2.txt 
+  866  cat answers2.txt 
+  867  vim answers2.txt 
+  868  ls
+  869  cat simi.txt 
+  870  grep [^ls] /simi.txt
+  871  grep [^"ls"] simi.txt
+  872  grep [^("ls")] simi.txt 
+  873  grep [^(ls)] simi.txt 
+  874  grep "^ls" simi.txt 
+  875  grep -C "^ls" simi.txt 
+  876  grep -E "^ls" simi.txt 
+  877  grep (^ls) simi.txt 
+  878  grep ^[ls] simi.txt 
+  879  cat answers2.txt 
+  880  grep -En "service" /data/yelp/yelp_academic_dataset_review.json 
+  881  echo "grep -En "service" /data/yelp/yelp_academic_dataset_review.json" >> answers2.txt 
+  882  cat answers2.txt 
+  883  vim answers2.txt 
+  884  grep -v "ls" simi.txt 
+  885  grep -v "Restaurants" /data/yelp/yelp_academic_dataset_business.json 
+  886  echo "B12: grep -v "Restaurants" /data/yelp/yelp_academic_dataset_business.json" >> answers2.txt 
+  887  cat answers2.txt 
+  888  vim answers2.txt 
+  889  grep '"state":"CA"' business.json   | grep -oE '"review_count":[0-9]+'   | grep -oE '[0-9]+'   | sort -nr | head -3 
+  890  grep '"state":"CA"' /data/yelp/yelp_academic_dataset_business.json   | grep -oE '"review_count":[0-9]+'   | grep -oE '[0-9]+'   | sort -nr | head -3
+  891  grep -o [^ls] simi.txt
+  892  grep [^l&s] simi.txt
+  893  echo "simi das" | grep -o [^ys]
+  894  grep -o '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | sort 
+  895  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | sort 
+  896  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE "name" | sort 
+  897  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[[:alnum:]]"' | sort 
+  898  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json 
+  899  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' | sed 's/"name":"//;s/"$//' | sort
+  900  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' | sort
+  901  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json 
+  902  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | sort -nk 4
+  903  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | sort -nk 2
+  904  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' | sort
+  905  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | sort -k2
+  906  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | sort -t ',' -k 2,2
+  907  grep '"state":"CA"' /data/yelp/yelp_academic_dataset_business.json   | grep -oE '"review_count":[0-9]+'   | grep -oE '[0-9]+'   | sort -nr | head -3
+  908  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' | sort | head -3
+  909  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' |grep -oE "[^"]+" | sort | head -3
+  910  grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' |grep -oE '"[^"]+"' | sort | head -3
+  911  vim answers2.txt 
+  912  git add answers2.txt 
+  913  git commit -m"Basic search & filtering"
+  914  git status
+  915  git push
+  916  git status
+  917  logout
+  918  ls
+  919  cd 131/
+  920  cd cs131
+  921  ls
+  922  ls 0610
+  923  ls
+  924  bash long.sh
+  925  cd 0610
+  926  ls
+  927  bash long.sh
+  928  git status
+  929  cd ..
+  930  git status
+  931  ls 0610 -al 
+  932  git add 0610/
+  933  git status
+  934  git commit -m "add 010 examples"
+  935  git push
+  936  cd ~/cs131
+  937  git pull  # sync with GitHub first
+  938  mkdir -p ws2 && cd ws2
+  939  echo "# CS131 ws2" > notes.md
+  940  touch answers.txt
+  941  git add notes.md
+  942  git commit -m "ws2: initial notes"
+  943  cd cs131
+  944  ls
+  945  cd ws2
+  946  ls
+  947  echo "task: practice git" >> notes.md
+  948  cat notes.md 
+  949  git add notes.md 
+  950  git status
+  951  git commit -m "practiving git" 
+  952  echo "Q1: git add notes.md; git commit -m "ws2: add task line" " >> answers.txt 
+  953  cat answers.txt 
+  954  vim answers.txt 
+  955  git log --oneline -n 3
+  956  git log --oneline -3
+  957  echo "Q2:  git log --oneline -3 " >> answers.txt 
+  958  cat answers.txt 
+  959  echo "WRONG: delete the database in production" >> notes.md
+  960  git commit -am "ws2: bad change"
+  961  git log --oneline -3
+  962  echo "Q3: a195012" >> answers.txt 
+  963  cat answers.txt 
+  964  git revert <a195012>
+  965  git revert a195012
+  966  cat notes.md 
+  967  echo "Q4: git revert a195012" >> answers.txt 
+  968  # create an oversized file (~150 MB) and commit it by accident
+  969  head -c 150M /dev/zero > bigdata.bin
+  970  git add bigdata.bin
+  971  git commit -m "ws2: oops added big file"
+  972  git push          # EXPECT THIS TO FAIL (file exceeds 100 MB)
+  973  git rm --cached bigdata.bin
+  974  echo "bigdata.bin" >> .gitignore
+  975  git add .gitignore
+  976  git commit --amend
+  977  git push 
+  978  echo "Q5: git rm --cached bigdata.bin; echo \"bigdata.bin\" >> .gitignore; git add .gitignore; git commit --amend; git push" >> answers.txt 
+  979  cat answers.txt 
+  980  rm bigdata.bin
+  981  ls
+  982  git switch -c feature-summary 
+  983  git status
+  984  echo "Q6: git switch -c feature-summary" >> answers.txt 
+  985  cat answers.txt 
+  986  echo "hello " > summary.md
+  987  echo "wow meow" >> summary.md 
+  988  echo "mewo mewo" >> summary.md 
+  989  echo "mraw mraw" >> summary.md 
+  990  git commit -am "this is for Q7"
+  991  git add summary.md 
+  992  git commit -m"this is for Q7"
+  993  echo "Q7: echo \"hello \" > summary.md; echo \"mewo mewo\" >> summary.md; echo \"mraw mraw\" >> summary.md; git add summary.md; git commit -m\"this is for Q7\"" >> answers.txt 
+  994  cat answers.txt 
+  995  git diff main --name-only
+  996  git diff main
+  997  echo "Q8: git diff main --name-only" >> answers.txt 
+  998  git switch main
+  999  git merge feature-summary
+ 1000  ls
+ 1001  echo "Q9: git switch main; git merge feature-summary" >> answers.txt 
+ 1002  git branch -d feature-summary
+ 1003  echo "Q10: git branch -d feature-summary" >> answers.txt 
+ 1004  # Starting from main with summary.md already merged in (Q9)
+ 1005  # Edit the first line of summary.md on main
+ 1006  printf "# Summary\nMain branch update\n" > summary.md
+ 1007  git commit -am "ws2: update summary on main"
+ 1008  # Create a branch that changes the same lines differently
+ 1009  git switch -c conflict-branch
+ 1010  printf "# Summary\nBranch-specific update\n" > summary.md
+ 1011  git commit -am "ws2: update summary on branch"
+ 1012  # Return to main — both branches now diverge on the same content
+ 1013  git switch main
+ 1014  git merge conflict-branch 
+ 1015  git switch main
+ 1016  printf "# Summary\nMain branch update\n" > summary.md
+ 1017  git commit -am "ws2: update summary on main"
+ 1018  git switch -c conflict-branch
+ 1019  printf "# Summary\nBranch-specific update\n" > summary.md
+ 1020  git commit -am "ws2: update summary on branch"
+ 1021  git switch main
+ 1022  git merge conflict-branch
+ 1023  history -10 >> error.txt
+ 1024  ls
+ 1025  cat error.txt 
+ 1026  history [-10] >> error.txt
+ 1027  ls
+ 1028  cat error.txt 
+ 1029  man history
+ 1030  history >> error.txt 

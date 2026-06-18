@@ -1,0 +1,15 @@
+Q1: git add notes.md; git commit -m "ws2: add task line" 
+Q2:  git log --oneline -3 
+Q3: a195012
+Q4: git revert a195012
+Q5: git rm --cached bigdata.bin; echo "bigdata.bin" >> .gitignore; git add .gitignore; git commit --amend; git push
+Q6: git switch -c feature-summary
+Q7: echo "hello " > summary.md; echo "mewo mewo" >> summary.md; echo "mraw mraw" >> summary.md; git add summary.md; git commit -m"this is for Q7"
+Q8: git diff main --name-only
+Q9: git switch main; git merge feature-summary
+Q10: git branch -d feature-summary
+Q11: git checkout main; git merge conflict-branch    conflict file:ws2/summary.md
+Q12: git status
+Q14: git add summary.md; git commit
+Q15: git fetch origin; git log HEAD..origin/main --online
+Q16: git fetch is a safer alternative to git pull and installs the latest changes/commits and files from a git repository onto your working space device, different from pull which does the fetch part but also merges it to your active code
