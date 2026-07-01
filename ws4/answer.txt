@@ -10,4 +10,34 @@ cpg()
 
 This function copies one item to the other and then enters that item (goes to that directory for example). It has an if and else statement that focuses on copying an item to another directory (checks for directory only), but if it is not a directory it only copies and does not move to that new directory. 
 
- 
+T2: 
+
+https://github.com/SeaMeMe/cs131/blob/0701423ae92ebecd0b085a7ceca505a90b52a2f9/ws4/.bashrc#L5
+
+mkcd() 
+mkcd() is a shell function to create a directory and change locations to it all in one command. 
+
+
+https://github.com/SeaMeMe/cs131/blob/0701423ae92ebecd0b085a7ceca505a90b52a2f9/ws4/.bashrc#L12
+
+alias ...='cd ..'
+
+This function creates a shortcut form for the long formatted version cd .., this can now be done by ..., making it faster and more efficient.
+
+
+https://github.com/SeaMeMe/cs131/blob/0701423ae92ebecd0b085a7ceca505a90b52a2f9/ws4/.bashrc#L14
+
+alias gs='git status'
+
+This function creates a shortcut form for git status which is important to ensure the repository is in good condition, and using gs makes that process efficient. 
+
+https://github.com/SeaMeMe/cs131/blob/0701423ae92ebecd0b085a7ceca505a90b52a2f9/ws4/.bashrc#L18
+
+
+if [ ! -d $FILE ]; then
+        echo "$FILE does not exist"
+else
+        echo "$FILE exists"
+fi
+
+This function is an if function that checks whether a directory exists or not. If the condition is proven to be true, then a directory does not exist. If it is proven false, then the directory does exist. 
