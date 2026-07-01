@@ -1,0 +1,13 @@
+T1: https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L268 
+
+ftext() 
+
+This function searches for a specific text within all the files in a folder. It uses a grep command along with options to make it clear and results in the information of which file and line number where the text occurs to be printed. 
+
+https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L302
+
+cpg()
+
+This function copies one item to the other and then enters that item (goes to that directory for example). It has an if and else statement that focuses on copying an item to another directory (checks for directory only), but if it is not a directory it only copies and does not move to that new directory. 
+
+ 
